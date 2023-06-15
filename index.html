@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="carregarEstados()">
+    <h1>Cadastro</h1>
+    <form action="#">
+      <label for="estados"> Estados </label>
+      <select name="estados" id="estados" onchange="carregarMunicipios()">
+        <option value="">Selecione</option>
+      </select>
+      <label for="cidades"> Cidades </label>
+      <select name="cidades" id="cidades" >
+        <option value="">Selecione</option>
+      </select>
+      <input type="button" value="Carregar cidades" id="btn" />
+    </form>
+    <script src="api.js"></script>
+  </body>
+</html>
